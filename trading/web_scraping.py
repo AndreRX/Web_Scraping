@@ -13,7 +13,7 @@ options.set_headless()
 def web_scraping():
     url = "https://www.investing.com/currencies/us-dollar-index-advanced-chart"
 
-    driver = webdriver.Firefox(executable_path=r'C:\Users\Andre\Prog\geckodriver.exe', options=options)
+    driver = webdriver.Firefox(executable_path=r'C:\Users\andre\Desktop\Web_Scraping\trading\geckodriver.exe', options=options)
     driver.get(url)
 
     element = driver.find_element_by_xpath('//*[@id="last_last"]')

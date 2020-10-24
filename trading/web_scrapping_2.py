@@ -10,7 +10,7 @@ options = Options()
 
 
 url = "https://www.investing.com/currencies/us-dollar-index-advanced-chart"
-driver = webdriver.Firefox(executable_path=r'C:\Users\Andre\Prog\geckodriver.exe', options=options)
+driver = webdriver.Firefox(executable_path=r'C:\Users\andre\Desktop\Web_Scraping\trading\geckodriver.exe', options=options)
 driver.get(url)
 
 def web_scraping():
