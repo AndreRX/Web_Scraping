@@ -20,13 +20,14 @@ def web_scraping():
 
     
     driver.refresh()
-    time.sleep(5)
+    
 
     print(html_content)
 
     with open("cotations.txt", "a") as prices:
         prices.write(html_content + ",")
 
+    time.sleep(5)
     return(web_scraping())
 
 
