@@ -10,8 +10,10 @@ options = Options()
 
 
 url = "https://www.investing.com/currencies/us-dollar-index-advanced-chart"
-driver = webdriver.Firefox(executable_path=r'C:\Users\andre\Desktop\Web_Scraping\trading\geckodriver.exe', options=options)
+driver = webdriver.Firefox(executable_path=r'C:\Users\andre\Desktop\Web_Scraping\geckodriver.exe', options=options)
 driver.get(url)
+
+file_path = "C:\\Users\\andre\\Desktop\\Web_Scraping\\trading\\cotations.txt"
 
 def web_scraping():
 
@@ -24,7 +26,7 @@ def web_scraping():
 
     print(html_content)
 
-    with open("cotations.txt", "a") as prices:
+    with open(file_path, "a") as prices:
         prices.write(html_content + ",")
 
     time.sleep(5)
